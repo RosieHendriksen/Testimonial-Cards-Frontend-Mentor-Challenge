@@ -1,0 +1,156 @@
+/* Add your styles here */
+html{
+  box-sizing: border-box;
+  background: hsl(210, 46%, 95%);  
+  font-family: 'Barlow Semi Condensed', sans-serif; 
+  font-size: 13px;
+}
+
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+
+.testimonial_container{
+  display: flex;
+  flex-direction: column;
+  max-width:1000px ;
+}
+
+.testimonial_card{
+  border-radius: 9px;
+  position: relative;
+  padding: 2em;
+  color: white;
+  box-shadow: 8px 8px 20px 4px rgba(0,0,0,0.15);
+  margin: 1em;
+}
+
+.author_section{
+  display: flex;
+  align-content: center;
+}
+.author_icon{
+  height:38px;
+  border-radius:50%;
+  display: inline-block;
+  z-index:1;
+}
+.author_title{
+  display: inline-flex;
+  height: 38px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 1.5em;
+  z-index: 1;
+}
+.author_name{
+  font-size:14px;
+  font-weight: 600;
+  margin: 0;
+}
+.author_credentials{
+  font-size: 11px;
+  opacity:50%;
+  margin: 0;
+}
+
+.quote_section{
+  position: relative;
+  margin:0;
+  padding: 0;
+  z-index:1;
+}
+
+.main_quote{
+  font-size: 19px;
+  font-weight: 600;
+  margin:1em 0 1em 0;
+  width: 100%;
+}
+.extended_quote{
+  opacity: 70%;
+  margin:0;
+}
+
+#first_card {
+  order: 1;
+  background: hsl(263, 55%, 52%);
+}
+#first_card .author_icon {
+  border: 3px solid hsl(263, 49%, 68%);
+}
+.quotation_signs{
+  position:absolute;
+  top: 0px;
+  right: 30px;
+  z-index:0
+}
+
+#second_card{
+  background: hsl(217, 19%, 35%);
+}
+
+#second_card .author_icon {
+  border: 3px solid hsl(0, 0%, 90%);
+}
+
+
+#third_card, #fith_card {
+  background: white;
+  color: hsl(217, 19%, 35%);
+}
+
+#fourth_card{
+  background: hsl(219, 29%, 14%);
+}
+#fourth_card .author_icon {
+  border: 3px solid hsl(263, 55%, 52%);
+}
+
+#fith_card{
+  margin-top:0;
+}
+
+.attribution{
+  width:100%;
+  background: white;
+  font-size:10px;
+  color: hsl(217, 19%, 35%);
+}
+
+
+@media (min-width: 576px){
+
+  .testimonial_container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .desktop_left{
+    display:flex;
+    flex-direction:column;
+    flex-basis:75%;
+  }
+  .desktop_left_top{
+    display:flex;
+  }
+  .desktop_left_bottom{
+    display:flex;
+  }
+  #first_card, #fourth_card{
+    flex-basis:70%;
+  }
+  #second_card, #third_card{
+    flex-basis: 30%;
+  }
+
+  #fith_card{
+    margin-top:1em;
+    flex-basis:25%;
+    order: 5;
+  }
+
+}
